@@ -1,4 +1,4 @@
-# Student Directory (Simple)
+# Student Directory
 
 A basic Student Directory built with **React + Vite + Bootstrap 5**.
 Uses React components & props with the Bootstrap components required by the assignment:
