@@ -65,35 +65,3 @@ App  (students, searchTerm, currentPage, alertMessage)
  └─ Footer       (no props)
 ```
 
-## HTML → JSX conversion rules used (from the class PDF)
-
-| HTML | JSX |
-|---|---|
-| `class="..."` | `className="..."` |
-| `onclick="..."` | `onClick={...}` |
-| `onchange="..."` | `onChange={...}` |
-| `onsubmit="..."` | `onSubmit={...}` |
-| `<input>` | `<input />` (self-closing) |
-| `<span>...</span>` (empty) | `<span ... />` |
-
-Bootstrap class names, `data-bs-*` attributes and `aria-*` attributes are kept **exactly** as Bootstrap documents them.
-
-## Try these
-
-- Type `Doe` in the navbar search → only the four Doe students remain.
-- Click **Delete** on a card → the card disappears and the alert updates.
-- Click the page numbers → the grid shows the next 4 students.
-
-</BDS:create_file>
-<BDS:create_file fileName="student-directory-simple/.gitignore">
-
-```gitignore
-node_modules
-dist
-dist-ssr
-*.local
-.DS_Store
-.env
-.env.local
-npm-debug.log*
-
